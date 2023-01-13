@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" type='text/css' content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap">
+  <link rel="shortcut icon" type="imagex/png" href="" width="16" height="16">
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/add-products.css" />
+  <title>Distribuidora Lourdes</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo-busqueda">
+        <a href="../index.html">
+          <div class="logo">
+            <img class="logo-img" src="../assets/icoautopartes.png" alt="logo" />
+            <div class="logo-nombre">
+              <p class="logo-color1">Distribuidora</p>
+              <p class="logo-color2">Lourdes</p>
+            </div>
+          </div>
+        </a>
+        <input i type="text" placeholder="Qué deseas buscar?" />
+      </div>
+      <div class="login">
+        <a href="../screens/login.html"><img src="../assets/icologin.png" class="ico-login" alt="login"></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-add">
+      <div class="product-add_title">Agregar nuevo producto </div>
+      <form class="form-cadastro" data-form>
+        <input class="product-add_input__url" type="text" placeholder="URL de Producto" required data-url />
+        <input class="product-add_input__name" type="text" placeholder="Nombre de producto" required data-nombre
+          minlength="3" maxlength="100" />
+        <input class="product-add_input__price" type="text" placeholder="Precio de producto" required data-precio />
+        <button type="submit" class="product-add_btn">
+          Agregar producto
+      </form>
+
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyB01FBapblYB18VmABN8XRrMCmhh_FGXnA",
+      authDomain: "distribuidora--lourdes-2b5fb.firebaseapp.com",
+      projectId: "distribuidora--lourdes-2b5fb",
+      storageBucket: "distribuidora--lourdes-2b5fb.appspot.com",
+      messagingSenderId: "501763556254",
+      appId: "1:501763556254:web:a48b50e64f53609c5e8c8f"
+    };
+  
+    // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+  </script> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"
+    integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+  <script type="module" src="../controllers/crea-productos-controller.js"></script>
+</body>
+
+</html>

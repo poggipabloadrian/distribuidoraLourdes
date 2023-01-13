@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" type="text/css" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/edit-product.css" />
+  <title>Alura Geek</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo-busqueda">
+        <a href="../index.html"><div class="logo">
+         <img class="logo-img" src="../assets/icoautopartes.png" alt="logo" />
+         <div class="logo-nombre">
+           <p class="logo-color1">Distribuidora</p>
+           <p class="logo-color2">Lourdes</p>
+         </div>
+       </div></a>
+        <input i type="text" placeholder="Qué deseas buscar?" />
+      </div>
+      <div class="login">
+        <a href="./login.html"><button type="submit" id="conectado">Online</button></a>
+      </div>
+    </nav>
+  </header>
+  <section class="geral-products">
+    <div class="product-edit_title">Editar producto</div>
+    <section class="products-section" data-allProducts>
+      <form action="#" class="form-control" data-form>
+        <input class="product-add_input__name" type="text" placeholder="Nombre del producto" minlength="3" maxlength="30"     data-nombre />
+        <input class="product-add_input__price" type="text" placeholder="Precio del producto"  minlength="1" maxlength="6" data-precio />
+        <textarea class="product-add_textarea__description" type="text" placeholder="Descripcion del producto"   maxlength="10"
+          data-descripcion></textarea>
+        <input class="product-add_input__url" type="text" placeholder="Url imagen del producto" data-imageUrl />
+        <button type="submit" class="product-submit_btn">
+          Actualizar producto
+        </button>
+      </form>
+    </section>
+  </section>
+</body>
+
+<section class="footer">
+  <section class="contacto" id="contacto">
+    <div class="referencia-links">
+
+      <div class="links-uteis">
+        <p id="contactanos"> CONTACTANOS!</p>
+        <p class="texto-color">Hola! Siempre estamos abiertos a la cooperación y sugerencias, contactenos de una de
+          las siguientes
+          maneras:</p>
+        <div class="links-social">
+          <div>
+            <p class="texto-color">WHATSAPP</p>
+            <a href="https://wa.me/+5491130375971">+5491130375971 </a>
+          </div>
+          <div>
+            <p class="texto-color">EMAIL</p>
+            <p>distribuidoralourdes@outlook.com</p>
+          </div>
+        </div>
+        <div class="seguinos-redes">
+          <p class="texto-color">Seguinos en redes:</p>
+          <ul>
+            <li>
+              <a href=""> <img src="../assets/instagram-logo.png" class="logo-contacto" alt="logo"></a>
+            </li>
+            <li>
+              <a href=""> <img alt="Chat on fb" src="../assets/fb.png" class="logo-contacto" /> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <form class="form">
+      <p>Envianos un mensaje</p>
+      <div class="caja-input-nome">
+        <input type="text" name="Nome" id="Nome" class="input-nome" placeholder="nombre" required minlength="4">
+        <label for="Nome" class="label-nome">Nombre</label></div>
+      <textarea name="mensagem" id="msg" cols="5" rows="5" placeholder="Escriba su Mensaje" required minlength="4"
+        maxlength=""></textarea>
+      <a href="../screens/mensaje-enviado.html">
+        <button type="button" class="mensajeEnviado-button">Enviar Mensaje</button>
+      </a>
+
+
+      <!-- <ul class="linkscontacto">
+    
+        <li>
+          <a href="https://www.instagram.com/gour_man_vda/"> <img src="./assets/instagram-logo.png" class="logo-contacto"  alt="logo"></a>
+        </li>  
+        <li>
+          <a aria-label="Chat on WhatsApp" href="https://wa.me/+5491130375971"> <img alt="Chat on WhatsApp" src="./assets/Whatsapp.ico" class="whatsapp"/> </a>
+        </li>
+      </ul> -->
+      <a aria-label="Chat on WhatsApp" href="https://wa.me/+5491130375971"> <img alt="Chat on WhatsApp"
+          src="../assets/Whatsapp.ico" class="whatsapp" /> </a>
+    </form>
+  </section>
+<script type="module" src="../controllers/actualiza-producto-controller.js"></script>
+
+</html>

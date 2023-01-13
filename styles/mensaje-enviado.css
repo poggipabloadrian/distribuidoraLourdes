@@ -1,0 +1,52 @@
+body{
+    background-color: #876AF2;
+}
+.mensajeEnviado-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 90px;
+    font-size: 24px;
+    gap: 40px;
+    background-color: white;
+    width: 20vw;
+    margin: 40px auto;
+    border-radius: 20px;
+}
+.logo{
+    margin-right: 0;
+}
+.logo-img{
+    width: 100px;
+    height: 100px;
+}
+.mensaje{
+    text-align: center;
+    margin: 0 0 10px ;
+}
+.mensajeEnviado-main a {
+    font-size: 32px;
+}
+
+
+
+@media only screen and (max-width:500px){
+
+.logo-img{
+    display: inline;
+    width: 100px;
+    height: 100px;
+}
+.mensajeEnviado-main{
+    gap: 20px;
+    background-color: white;
+    width: 20vw;
+    height: 300px;
+    justify-content: center;
+    border-radius: 20px;
+}
+.mensajeEnviado-button {
+    width: 100px;
+}
+
+}

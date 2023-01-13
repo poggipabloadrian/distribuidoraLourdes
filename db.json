@@ -1,0 +1,18 @@
+{
+  "producto": [
+    {
+      "name": "Batman 2",
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_640262-MCO47330060660_092021-O.webp",
+      "price": "65",
+      "id": 23,
+      "description": "undefined"
+    },
+    {
+      "name": "Hulk 2",
+      "imageUrl": "https://m.media-amazon.com/images/I/516X0YLRV+L._AC_SY879_.jpg",
+      "price": "55",
+      "id": 24,
+      "description": "undefined"
+    }
+  ]
+}
